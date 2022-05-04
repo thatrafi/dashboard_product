@@ -6,7 +6,7 @@ const UserInformation = (props) => {
     <Card className="full">
       <div className={styles.wrapper}>
         <h3>User Information</h3>
-        <img src="https://img.innoloft.com/users/user_8d48197d.png" />
+        <img src={props.image || 'https://img.innoloft.com/users/user_8d48197d.png'} />
         <h4>{props.userName || 'Name'}</h4>
         <p>{props.companyName || 'Company Name'}</p>
       </div>

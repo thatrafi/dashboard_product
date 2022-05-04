@@ -1,6 +1,6 @@
 @import './variable.scss';
 
-body{
+body {
   margin: 0;
 }
 
@@ -14,7 +14,7 @@ body{
   gap: 5rem;
   padding: 0 1rem 3rem 1rem;
   box-sizing: border-box;
-  @include responsive(pc){
+  @include responsive(pc) {
     padding: 0 3rem 3rem 0;
   }
 }
@@ -64,6 +64,7 @@ span {
   -webkit-text-fill-color: transparent;
 }
 
-textarea:focus, input:focus{
+textarea:focus,
+input:focus {
   outline: none;
 }

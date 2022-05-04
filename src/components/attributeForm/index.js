@@ -13,7 +13,7 @@ const AttributeForm = React.forwardRef((props, ref) => {
       </div>
       <form id="inputData" ref={ref}>
         {!props.isSelect &&
-          props.data &&
+          props.data.length > 0 &&
           props.data.map((att) => (
             <Input
               key={att.id}
@@ -25,7 +25,7 @@ const AttributeForm = React.forwardRef((props, ref) => {
             />
           ))}
         {props.isSelect &&
-          props.data &&
+          props.data.length > 0 &&
           props.data.map((att, idx) => (
             <Select
               selected={att.id}

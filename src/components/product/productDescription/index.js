@@ -7,7 +7,9 @@ const ProductDescription = React.forwardRef((props, ref) => {
     <textarea
       className={styles.inputDescription}
       ref={ref}
-      defaultValue={props.text || 'Enter your text here...'}
+      onChange={props.onChangeDesc}
+      placeholder={'Enter your text here...'}
+      defaultValue={props.text}
       id="textArea"
     />
   );
