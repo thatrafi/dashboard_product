@@ -67,7 +67,7 @@ const ProductPage = () => {
       <Navigation />
       <Card className="fit">
         <div className={styles.productInformation}>
-          <ProductImage />
+          <ProductImage name="product image" src={data.picture} />
           <div className="mainInfo">
             <h1>{data.name || 'This is Product Name'}</h1>
             <span>{data.type ? data.type.name : 'Software'}</span>
