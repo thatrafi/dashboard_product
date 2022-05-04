@@ -1,0 +1,21 @@
+@import '../../styles/variable.scss';
+
+.row {
+  min-height: 568px;
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  box-sizing: border-box;
+  @include responsive(mobile) {
+    flex-direction: column;
+  }
+}
+
+.center {
+  align-items: center;
+}
+
+.fit {
+  min-height: fit-content;
+}

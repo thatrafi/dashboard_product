@@ -1,0 +1,18 @@
+@import '../../styles/variable.scss';
+
+$heightInput: 42px;
+
+.select {
+  background-color: white;
+  width: 100%;
+  color: $PrimaryColor;
+  padding: 0 20px;
+  min-height: $heightInput;
+  border: 0px;
+  margin: 1rem 0 0 0;
+  box-sizing: border-box;
+  @include responsive(mobile) {
+    padding: 0 0 0 1rem;
+    box-sizing: border-box;
+  }
+}

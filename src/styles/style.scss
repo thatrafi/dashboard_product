@@ -1,0 +1,69 @@
+@import './variable.scss';
+
+body{
+  margin: 0;
+}
+
+.main {
+  height: 100%;
+  max-width: 90rem;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 5rem;
+  padding: 0 1rem 3rem 1rem;
+  box-sizing: border-box;
+  @include responsive(pc){
+    padding: 0 3rem 3rem 0;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+h1 {
+  @include fontStyle(3.5rem, 110%, 700);
+}
+
+h2 {
+  @include fontStyle(3rem, 120%, 700);
+}
+
+h3 {
+  @include fontStyle(2.25rem, 120%, 700);
+}
+
+h4 {
+  @include fontStyle(1.5rem, 140%, 700);
+}
+
+h5 {
+  @include fontStyle(1.125rem, 150%, 700);
+}
+
+h6 {
+  @include fontStyle(1rem, 150%, 700);
+}
+
+p {
+  @include fontStyle(1rem, 150%, 400);
+}
+
+span {
+  @include fontStyle(1.5rem, 120%, 700);
+  background-color: grey;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}

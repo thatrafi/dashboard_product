@@ -1,0 +1,38 @@
+@import '../../styles/variable.scss';
+
+.NavUl {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  padding: 0 5rem;
+  gap: 1.25rem;
+  @include responsive(mobile) {
+    flex-flow: wrap row;
+    justify-content: center;
+    padding: 0;
+  }
+}
+
+.NavItem {
+  list-style: none;
+  @include responsive(mobile) {
+    button {
+      height: 1rem;
+      h6 {
+        font-size: x-small;
+      }
+    }
+  }
+}
+
+.NavItem a {
+  text-decoration: none;
+  color: $PrimaryColor;
+  font-size: x-large;
+}
+
+.NavItem a:hover,
+.NavItem a.active {
+  color: $SecondaryColor;
+  transition: all 0.5s;
+}

@@ -1,0 +1,30 @@
+@import '../../styles/variable.scss';
+
+.tabUl {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: lightgray;
+  gap: 1rem;
+  margin: 0;
+  border-bottom: 1px solid lightgray;
+  padding: 1rem 0 0 0;
+}
+
+.tabItem {
+  list-style: none;
+}
+
+.tabLink {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.activeTab {
+  color: $PrimaryColor;
+  border-bottom: 3px solid $PrimaryColor;
+}
+
+.tabContent {
+  padding: 1rem 0 0 0;
+}

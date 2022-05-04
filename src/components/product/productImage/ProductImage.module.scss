@@ -1,0 +1,8 @@
+@import '../../../styles/variable.scss';
+
+.imgProduct {
+  @include responsive(mobile) {
+    height: 350px;
+    width: 100%;
+  }
+}

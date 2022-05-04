@@ -1,0 +1,41 @@
+@import '../../styles/variable.scss';
+
+$buttonHeight: 56px;
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.primary {
+  background-color: $PrimaryColor;
+  color: white;
+  box-sizing: border-box;
+}
+
+.secondary {
+  background-color: white;
+  color: $PrimaryColor;
+  border: 2px solid $SecondaryColor;
+  box-sizing: border-box;
+}
+
+.small {
+  width: 128px;
+  height: $buttonHeight;
+}
+
+.big {
+  width: 171px;
+  height: $buttonHeight;
+}
+
+.rounded {
+  border-radius: 8px;
+}

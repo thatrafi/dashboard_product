@@ -1,0 +1,14 @@
+@import '../../../styles/variable.scss';
+
+$heightInput: 72px;
+
+.inputDescription {
+  background-color: white;
+  color: $PrimaryColor;
+  min-height: $heightInput * 2;
+  border: 0px;
+  padding: 1rem 0 0 0;
+  box-sizing: border-box;
+  font-family: $fontFamily;
+  width: 100%;
+}

@@ -1,0 +1,38 @@
+// Button
+$PrimaryColor: #272e71;
+$InactiveColor: #dddddd;
+$SecondaryColor: #e4b302;
+// Font
+$fontFamily: 'Open Sans', sans-serif;
+
+@mixin fontStyle($size, $lineHeight, $weight) {
+  font-family: $fontFamily;
+  font-style: normal;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $lineHeight;
+}
+
+$pc: 1024px; // PC screen size.
+$tablet: 720px; // Tablet screen size.
+$phone: 320px; // Phone screen size.
+
+@mixin responsive($media) {
+  @if $media==mobile {
+    @media only screen and (max-width: $tablet) {
+      @content;
+    }
+  } @else if $media==tablet {
+    @media (min-width: #{$tablet}) and (max-width: #{$pc - 1px}) {
+      @content;
+    }
+  } @else if $media==pc {
+    @media only screen and (min-width: $pc) {
+      @content;
+    }
+  } @else if $media==pc_tablet {
+    @media only screen and (min-width: $tablet) {
+      @content;
+    }
+  }
+}
