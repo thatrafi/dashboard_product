@@ -1,11 +1,12 @@
 import React from 'react';
 import styles from './Header.module.scss';
-import logo from 'images/logo.svg';
+import { useSelector } from 'react-redux';
 
 const Header = () => {
+  const setting = useSelector((state) => state.setting.SettingsData);
   return (
     <header className={styles.header}>
-      <img src={logo} />
+      <img src={setting.logo} />
     </header>
   );
 };

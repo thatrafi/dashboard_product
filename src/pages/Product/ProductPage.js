@@ -21,6 +21,7 @@ const ProductPage = () => {
   const data = useSelector((state) => state.product.ProductData);
   const responseData = useSelector((state) => state.product.PostResponse);
   const descInput = useRef('');
+  const setting = useSelector((state) => state.setting.SettingsData);
   useEffect(() => {
     dispatch(getProductDetailAsync());
     dispatch(getTrlAsync());
@@ -87,7 +88,7 @@ const ProductPage = () => {
         </div>
       </Card>
       <div className={styles.userInformation}>
-        {data.user && data.company && (
+        {setting.hasUserSection && data.user && data.company && (
           <UserInformation
             userName={`${data.user.firstName} ${data.user.lastName}`}
             companyName={data.company.name}
