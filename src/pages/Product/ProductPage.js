@@ -65,7 +65,7 @@ const ProductPage = () => {
   return (
     <Row>
       <Navigation />
-      <Card className="fit">
+      <Card>
         <div className={styles.productInformation}>
           <ProductImage name="product image" src={data.picture} />
           <div className="mainInfo">
