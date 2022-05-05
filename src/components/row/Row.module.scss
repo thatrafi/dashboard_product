@@ -5,10 +5,10 @@
   width: 100%;
   display: flex;
   gap: 1rem;
-  flex-direction: row;
+  flex-direction: column;
   box-sizing: border-box;
-  @include responsive(mobile) {
-    flex-direction: column;
+  @include responsive(pc) {
+    flex-direction: row;
   }
 }
 
