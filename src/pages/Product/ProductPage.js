@@ -109,7 +109,7 @@ const ProductPage = () => {
         <MyModal
           title={responseData.isError ? 'Error' : 'Success'}
           message={responseData.message}
-          result={responseData.result && JSON.stringify(responseData.result.data)}
+          result={responseData.result && `\n${JSON.stringify(responseData.result.data)}`}
           onConfirm={confirmHandler}
         />
       )}

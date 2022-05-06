@@ -7,6 +7,7 @@ body {
 .main {
   height: 100%;
   max-width: 90rem;
+  min-height: 100vh;
   background-color: #f6f6f6;
   display: flex;
   flex-direction: column;

@@ -1,7 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-import Card from 'components/card';
 import Button from 'components/button';
 import styles from './Modal.module.scss';
 
@@ -12,18 +10,16 @@ const Backdrop = (props) => {
 const Modal = (props) => {
   return (
     <div className={styles.modal}>
-      <Card className="rounded">
-        <header className={styles.header}>
-          <h2>{props.title}</h2>
-        </header>
-        <div className={styles.content}>
-          <p>{props.message}</p>
-          {props.result && <p>{props.result}</p>}
-        </div>
-        <footer className={styles.actions}>
-          <Button onClick={props.onConfirm} label="Ok" className="primary rounded" />
-        </footer>
-      </Card>
+      <header className={styles.header}>
+        <h2>{props.title}</h2>
+      </header>
+      <div className={styles.content}>
+        <p>{props.message}</p>
+        {props.result && <p>{props.result}</p>}
+      </div>
+      <footer className={styles.actions}>
+        <Button onClick={props.onConfirm} label="Ok" className="primary rounded" />
+      </footer>
     </div>
   );
 };
